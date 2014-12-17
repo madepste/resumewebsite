@@ -1,5 +1,5 @@
 
-n($,W,D)
+(function($,W,D)
 {
 var JQUERY = {};
 JQUERY4U.UTIL =
@@ -42,3 +42,5 @@ $(D).ready(function($) {
 JQUERY4U.UTIL.setupFormValidation();
 });
 })(jQuery, window, document);
+
+
