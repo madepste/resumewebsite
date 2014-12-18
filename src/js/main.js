@@ -1,35 +1,34 @@
-
 (function($,W,D)
 {
-var JQUERY = {};
+var JQUERY4U = {};
 JQUERY4U.UTIL =
 {
 setupFormValidation: function()
 {
-//form val rules
+//form validation rules
 $("#register-form").validate({
-rules:{
+rules: {
 firstname: "required",
 lastname: "required",
 email: {
-required:true,
+required: true,
 email: true
 },
 password: {
 required: true,
-minlegnth: 8
+minlength: 5
 },
 agree: "required"
 },
-messages:{
+messages: {
 firstname: "Please enter your firstname",
 lastname: "Please enter your lastname",
 password: {
 required: "Please provide a password",
-minlength: "Your password must be at least 8 characters long"
+minlength: "Your password must be at least 5 characters long"
 },
 email: "Please enter a valid email address",
-agree: "You must accept our terms and conditions"
+agree: "Please accept our policy"
 },
 submitHandler: function(form) {
 form.submit();
@@ -37,10 +36,9 @@ form.submit();
 });
 }
 }
-//when the dom has loaded setup form val rules
+//when the dom has loaded setup form validation rules
 $(D).ready(function($) {
 JQUERY4U.UTIL.setupFormValidation();
 });
 })(jQuery, window, document);
-
 
