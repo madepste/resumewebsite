@@ -268,8 +268,8 @@ width: 220px;
 							        -o-transition: color .25s;
 								  transition: color .25s;
 								  }
-								  #menu ul li a:hover {
-								    color: #333333;
+ #menu ul li a:hover {
+    color: #CC0000;
 								    }
 								    #menu ul li a:hover:before {
 								      width: 100%;
@@ -293,7 +293,7 @@ width: 220px;
 												  bottom: 0;
 												    height: 3px;
 												      width: 0;
-												        background: #333333;
+	        background: #CC0000;
 													  -webkit-transition: width .25s;
 													    -moz-transition: width .25s;
 													      -ms-transition: width .25s;
